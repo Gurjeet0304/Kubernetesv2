@@ -1,0 +1,13 @@
+replicaCount: 2
+storage: 2Gi
+image:
+  repo: ghost
+pod:
+  port: 80
+nameOverride: ""
+fullnameOverride: ""
+service:
+  enabled: true
+  tier: frontend
+  type: NodePort
+  port: 80
